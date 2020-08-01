@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="virtual" title="one" data-index="0">
+    虚拟DOM树
+    <p>DOM元素</p>
+</div>
+<script>
+    var div = {
+        tagName:'div',
+        attrs:{
+            id:'virtual',
+            title:'one',
+            'data-index':'0'
+        },
+        children:[
+            '虚拟DOM树',
+            {
+                tagName:'p',
+                attrs:{},
+                children:[
+                    'DOM元素'
+                ]
+            }
+        ]
+    }
+</script>
+</body>
+</html>
